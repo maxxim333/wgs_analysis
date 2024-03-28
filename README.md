@@ -15,10 +15,10 @@ bcftools view -i 'FILTER="PASS" && (GT="1/1" || GT="0/1") && (AC>0) ' /Volumes/T
 
 #!/bin/bash\
 \
-# Directory containing the files\
+#Directory containing the files\
 directory="/Users/maxxim333/Desktop/projects/haplogroupsY/clin_var_1by1"\
 \
-# Iterate over files in the directory\
+#Iterate over files in the directory\
 for filename in "$directory"/*.txt; do\
     if [ -f "$filename" ]; then\
         # Extract 'X' value from the filename\
